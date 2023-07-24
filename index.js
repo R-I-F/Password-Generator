@@ -35,11 +35,11 @@ function passwordGenerator(){
 }
 
 passBox1.addEventListener("click", function c(){
-    document.execCommand('copy')
+
     errorMsg.textContent = "password has been copied"
 })
 passBox2.addEventListener("click", function c(){
-    document.execCommand('copy')
+
     errorMsg.textContent = "password has been copied"
 })
 
