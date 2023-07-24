@@ -1,0 +1,28 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="control-margin">
+                <h1 id="title">Generate a <br><span class="green-text">random password<span></span><br></h1>
+                <p class="normal-text">Never use an insecure password again</p>
+                <div class="mid">
+                    <button onclick="passwordGenerator()" class="btn-1 radius-border">Generate password</button>  
+                    <input type="text" placeholder="Enter length" id="input-1">
+                </div>
+                <hr id="line"></hr>
+                <div id="container">
+                <div id="pass-box1" class="pass-box-1 radius-border">
+                    <p id="pass1" class="pass green-text"></p>
+                </div>
+                <div id="pass-box2" class="pass-box-2 radius-border">
+                    <p id="pass2" class="pass green-text"></p>
+                </div>
+                </div>
+                <P id="error-msg" class="normal-text"></P>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
