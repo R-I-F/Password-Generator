@@ -30,18 +30,25 @@ function passwordGenerator(){
         password1 += characters[Math.floor(Math.random()*characters.length)]
         password2 += characters[Math.floor(Math.random()*characters.length)]       
     }
+
     passEl1.textContent = password1
     passEl2.textContent = password2
+    
 }
 
 passBox1.addEventListener("click", function c(){
-
     errorMsg.textContent = "password has been copied"
+    let passx1 = document.getElementById("pass1").textContent  
+    navigator.clipboard.writeText(passx1)
+
 })
+
 passBox2.addEventListener("click", function c(){
-
     errorMsg.textContent = "password has been copied"
+    let passx2 = document.getElementById("pass2").textContent
+    navigator.clipboard.writeText(passx2)
 })
+
 
 
 
